@@ -1,6 +1,6 @@
 # 🌟 Instituto ICPNA - Plataforma Web Institucional
 
-Bienvenido a la plataforma web institucional del **Instituto ICPNA**. Este proyecto está diseñado para ofrecer una experiencia moderna, intuitiva y eficiente tanto para estudiantes como para administradores, integrando funcionalidades clave como calendario académico, niveles educativos, actividades estudiantiles, autenticación y más.
+Bienvenido a la plataforma web institucional del **Instituto ICPNA**. Este proyecto está diseñado para ofrecer una experiencia moderna, intuitiva y eficiente tanto para estudiantes como para administradores, integrando funcionalidades clave como calendario académico, niveles educativos, actividades estudiantiles, autenticación y más..
 
 ---
 
@@ -75,25 +75,3 @@ reac/
    [http://localhost:5173](http://localhost:5173)
 
 ---
-
-## ✨ Capturas de pantalla
-
-> Puedes agregar aquí imágenes del calendario, actividades y niveles educativos para mostrar el diseño visual.
-
----
-
-## 👨‍💻 Créditos y agradecimientos
-
-- Desarrollado por: **Ronal**
-- Inspiración: Comunidad ICPNA y estudiantes
-- Icons: [FontAwesome](https://fontawesome.com/) & [React Icons](https://react-icons.github.io/react-icons/)
-
----
-
-## 📬 Contacto
-
-¿Tienes sugerencias o quieres contribuir? ¡Contáctanos a [actividadesestudiantiles@icpna.edu.pe](mailto:actividadesestudiantiles@icpna.edu.pe)!
-
----
-
-> _"La educación es el arma más poderosa que puedes usar para cambiar el mundo."_ – Nelson Mandela
