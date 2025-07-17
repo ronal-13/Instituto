@@ -1,0 +1,221 @@
+/* Estilos generales */
+.matricula-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .matricula-title {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  /* Sección del calendario */
+  .calendar-section {
+    margin-bottom: 3rem;
+  }
+  
+  .calendar-legend {
+    background: linear-gradient(90deg, #e0eafc 0%, #cfdef3 100%);
+    padding: 1.2rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+  }
+  
+  .calendar-legend h3 {
+    margin-top: 0;
+    color: #2c3e50;
+  }
+  
+  .calendar-legend ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2.5rem;
+  }
+  
+  .calendar-legend li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .legend-color {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+  }
+  
+  .legend-color.inicio {
+    background-color: #4CAF50;
+  }
+  
+  .legend-color.fin {
+    background-color: #F44336;
+  }
+  
+  /* Tabla de calendario */
+  .matricula-calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.10);
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .matricula-calendar th {
+    background: linear-gradient(90deg, #2c3e50 0%, #4e5d6c 100%);
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  .matricula-calendar td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .matricula-calendar tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .matricula-calendar tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .inicio-clases td:first-child,
+  .fin-clases td:first-child {
+    font-weight: bold;
+  }
+  
+  .inicio-clases td:not(:first-child):not(:empty) {
+    background: #d4f8e8;
+    color: #218c5a;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  
+  .fin-clases td:not(:first-child):not(:empty) {
+    background: #ffe0e0;
+    color: #c0392b;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  
+  /* Niveles educativos */
+  .niveles-educativos {
+    background: linear-gradient(90deg, #e0eafc 0%, #cfdef3 100%);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    margin-top: 2.5rem;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+  }
+  
+  .niveles-educativos h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .niveles-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .niveles-list li {
+    background-color: #e74c3c;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .niveles-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .nivel-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    min-width: 180px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  .nivel-card:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(44,62,80,0.18);
+  }
+  .nivel-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .nivel-card.inicial .nivel-icon {
+    color: #f39c12;
+  }
+  .nivel-card.primaria .nivel-icon {
+    color: #2980b9;
+  }
+  .nivel-card.secundaria .nivel-icon {
+    color: #8e44ad;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .calendar-wrapper {
+      overflow-x: auto;
+    }
+    
+    .matricula-calendar {
+      font-size: 0.9rem;
+    }
+    
+    .matricula-calendar th,
+    .matricula-calendar td {
+      padding: 8px 4px;
+    }
+    
+    .calendar-legend ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .niveles-list {
+      flex-direction: column;
+    }
+    .niveles-cards {
+      flex-direction: column;
+      gap: 1.2rem;
+      align-items: center;
+    }
+    .nivel-card {
+      min-width: 140px;
+      padding: 1rem 1.2rem;
+    }
+  } 
